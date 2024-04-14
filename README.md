@@ -12,12 +12,12 @@ npm install -g yarn
 brew install yarn 
 ```
 
-### Step 3. Inside the Projekt folder
+### Step 3. Inside the Projekt folder (root)
 ```
 npm install
 ```
 
-### Step 4. Inside the Projekt folder
+### Step 4. Inside the Projekt folder (root)
 ```
 npm run serve
 ```
