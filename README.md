@@ -7,7 +7,7 @@ Install Node.js https://nodejs.org/en/download
 npm install -g yarn
 ```
 
-##### - Step 2. Mac
+##### (Step 2. Mac)
 ```
 brew install yarn 
 ```
