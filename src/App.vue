@@ -9,7 +9,7 @@
 
 <script>
 import Navbar from '@/components/NavbarComponent.vue';
-import { auth } from '@/main'; // Firebase-Initialisierung
+import { auth } from '@/main'; 
 
 export default {
   name: 'App',
@@ -25,18 +25,19 @@ export default {
     this.checkAuthStatus();
   },
   methods: {
+    // Methode zum Überprüfen des Authentifizierungsstatus des Benutzers
     checkAuthStatus() {
-  auth.onAuthStateChanged(user => {
-    this.isLoggedIn = !!user;
-    if (!this.isLoggedIn && this.$route.path !== '/login' && this.$route.path !== '/register') {
-      // Prüfen, ob der Benutzer nicht bereits auf der /login-Seite ist
-      // Bevor wir zur /login-Seite weiterleiten
-      this.$router.push('/login').catch(() => {});
+      // Überwacht Änderungen im Authentifizierungsstatus
+      auth.onAuthStateChanged(user => {
+        // Setzt die Variable 'isLoggedIn' auf true, wenn ein Benutzer angemeldet ist, andernfalls auf false
+        this.isLoggedIn = !!user;
+        // Überprüft, ob der Benutzer nicht angemeldet ist und nicht auf der Login- oder Registrierungsseite ist
+        if (!this.isLoggedIn && this.$route.path !== '/login' && this.$route.path !== '/register') {
+          // Leitet den Benutzer zur Login-Seite weiter, falls er nicht angemeldet ist und sich nicht bereits auf der Login-Seite befindet
+          this.$router.push('/login').catch(() => {});
+        }
+      });
     }
-  });
-}
-
-
   }
 };
 </script>
