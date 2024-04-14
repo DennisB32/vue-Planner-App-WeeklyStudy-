@@ -2,7 +2,7 @@
 ## Step 1.
 Install Node.js https://nodejs.org/en/download
 
-## Step 2. Windows
+### Step 2. Windows
 ```
 npm install -g yarn
 ```
