@@ -1,7 +1,8 @@
 # vue-planner-app
-1. Install Node.js https://nodejs.org/en/download
+## Step 1.
+Install Node.js https://nodejs.org/en/download
 
-## 2.
+## Step 2.
 ```
 npm install -g vue-cli@3.12.0 
 ```
