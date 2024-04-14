@@ -1,14 +1,14 @@
 # vue-planner-app
-Install NodeJS
+1. Install Node.js https://nodejs.org/en/download
 
-## Project setup
+## 2.
 ```
-npm install
+npm install -g vue-cli@3.12.0 
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm install -g vue@3.12.0
+
 ```
 
 ### Compiles and minifies for production
