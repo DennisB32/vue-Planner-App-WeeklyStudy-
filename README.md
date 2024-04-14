@@ -2,24 +2,24 @@
 ## Step 1.
 Install Node.js https://nodejs.org/en/download
 
-## Step 2.
+## Step 2. Windows
 ```
-npm install -g vue-cli@3.12.0 
-```
-
-### 
+npm install -g yarn
 ```
 
+### Step 2. Mac
+```
+brew install yarn 
 ```
 
-### 
+### Step 3. Inside the Projekt folder
+```
+npm install
 ```
 
+### Step 4. Inside the Projekt folder
 ```
-
-
-```
-
+npm run serve
 ```
 
 ### Customize configuration
