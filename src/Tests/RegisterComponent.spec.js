@@ -44,6 +44,6 @@ describe('RegistrationComponent', () => {
     expect(registerMock).toHaveBeenCalled();
   });
 
-  // Fügen Sie weitere Tests hinzu, um die Validierungsmethoden und andere Funktionalitäten zu überprüfen
+  // Weitere Tests können hinzugefügt werden
 
 });
