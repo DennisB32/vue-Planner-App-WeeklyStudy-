@@ -55,7 +55,7 @@
         </v-list>
         <v-divider></v-divider>
         <!-- Liste der nächsten Aufgaben -->
-        <div style="min-height: 530px;">
+        <div style="min-height: 50%; overflow: hidden;">
           <!-- Nachricht bei leerer Aufgabenliste -->
           <v-subheader class="d-flex justify-center" v-if="slicedTasks.length === 0" style="margin-top: 100px;">Keine Aufgaben</v-subheader>
           <v-list-item-group>
