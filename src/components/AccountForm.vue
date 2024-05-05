@@ -111,16 +111,19 @@ export default {
             currentUser.updatePassword(newPassword)
               .then(() => {
                 console.log('Passwort erfolgreich aktualisiert.');
+                alert('Passwort Erfolgreich aktualisiert!');
                 // Schließe das Dialogfenster
                 this.closeAccountDialog();
               })
               .catch(error => {
                 console.error('Fehler beim Aktualisieren des Passworts:', error);
+                alert('Passwort wurde nicht aktualisiert! Bitte Erneut einloggen!');
               });
           } else {
             console.log('Passwort nicht aktualisiert.');
             // Schließe das Dialogfenster
             this.closeAccountDialog();
+            window.location.reload();
           }
         })
         .catch(error => {
