@@ -110,10 +110,14 @@
               <div class="flex-grow-1"></div>
             </v-toolbar>
 
-            <v-card-text>
+           <v-card-text>
               <!-- Anzeigen der Ereignisdetails oder Bearbeitungsfelder -->
               <form v-if="currentlyEditing !== selectedEvent.id">
                 <h3>Details</h3>{{ selectedEvent.details }}
+                <h3>Dozent</h3>{{ selectedEvent.teacher }}
+                <h3>Ort</h3>{{ selectedEvent.place }}
+                <h3>Start</h3>{{ selectedEvent.start }}
+                <h3>Ende</h3>{{ selectedEvent.end }}
               </form>
               <!-- Bearbeitungsfelder für das ausgewählte Ereignis -->
               <form v-else>
@@ -126,13 +130,33 @@
                 />
                 <!-- Weitere Bearbeitungsfelder -->
                 <h4 class="text-decoration-underline">Details</h4>
-                <!-- Weitere Bearbeitungsfelder -->
+                <input
+                  v-model="selectedEvent.details"
+                  type="text"
+                  style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.26); border-radius: 4px; padding: 8px;"
+                  placeholder="Edit Details"
+                />
                 <h4 class="text-decoration-underline">Dozent</h4>
-                <!-- Weitere Bearbeitungsfelder -->
+                <input
+                  v-model="selectedEvent.teacher"
+                  type="text"
+                  style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.26); border-radius: 4px; padding: 8px;"
+                  placeholder="Edit Dozent"
+                />
                 <h4 class="text-decoration-underline">Ort</h4>
-                <!-- Weitere Bearbeitungsfelder -->
+                <input
+                  v-model="selectedEvent.place"
+                  type="text"
+                  style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.26); border-radius: 4px; padding: 8px;"
+                  placeholder="Edit Ort"
+                />
                 <h4 class="text-decoration-underline">Farbe</h4>
-                <!-- Weitere Bearbeitungsfelder -->
+                <input
+                  v-model="selectedEvent.color"
+                  type="color"
+                  style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.26); border-radius: 4px; padding: 8px;"
+                  placeholder="Edit Farbe"
+                />
               </form>
             </v-card-text>
 
