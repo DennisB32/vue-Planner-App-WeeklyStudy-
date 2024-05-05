@@ -117,7 +117,7 @@ export default {
               })
               .catch(error => {
                 console.error('Fehler beim Aktualisieren des Passworts:', error);
-                alert('Passwort wurde nicht aktualisiert! Bitte Erneut einloggen!');
+                alert('Passwort wurde nicht aktualisiert! Bitte Erneut einloggen oder Passwort zu kurz (min 6 Zeichen)!');
               });
           } else {
             console.log('Passwort nicht aktualisiert.');
