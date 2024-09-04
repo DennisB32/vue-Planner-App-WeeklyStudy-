@@ -12,12 +12,12 @@ Vue.config.productionTip = false;
 
 // Firebase initialisieren mit den Projektinformationen
 firebase.initializeApp({
-  apiKey: "AIzaSyAYtDVGoLhZNZJDBtye2wBJwfEikRhGWc0",
-  authDomain: "weeklystudy-51192.firebaseapp.com",
-  projectId: "weeklystudy-51192",
-  storageBucket: "weeklystudy-51192.appspot.com",
-  messagingSenderId: "495934638654",
-  appId: "1:495934638654:web:84d280eda332a992d0df6f"
+  apiKey: ,
+  authDomain: ,
+  projectId: ,
+  storageBucket: ,
+  messagingSenderId: ,
+  appId: 
 })
 
 // Exportiere das Firestore-Modul für die Verwendung in anderen Dateien
